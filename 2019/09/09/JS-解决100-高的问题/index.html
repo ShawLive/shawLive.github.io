@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="nvpKong">
 <meta property="og:description" content="在Vue.js页面中使用了Element组件，它会自动给我们生产虚拟DOM，我们无法设置高度100%；这时候可以利用javascript，来设置100%高度问题。HTML代码如下： 123&amp;lt;div&amp;gt;  &amp;lt;div id=&quot;order-list&quot;&amp;gt;DIV高度为100%&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  JS代码如下： 1234mounted: function">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-10T10:16:35.760Z">
+<meta property="og:updated_time" content="2019-09-10T10:34:35.529Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS-解决100%高的问题">
 <meta name="twitter:description" content="在Vue.js页面中使用了Element组件，它会自动给我们生产虚拟DOM，我们无法设置高度100%；这时候可以利用javascript，来设置100%高度问题。HTML代码如下： 123&amp;lt;div&amp;gt;  &amp;lt;div id=&quot;order-list&quot;&amp;gt;DIV高度为100%&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  JS代码如下： 1234mounted: function">
@@ -358,6 +358,7 @@
 <p><code>JS代码如下：</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mounted: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  var orderHeight = document.body.clientHeight;</span><br><span class="line">  document.getElementById(<span class="string">"order-list"</span>).style.height=orderHeight+<span class="string">'px'</span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
+<p>参考文献 <a href="https://harttle.land/2016/04/24/client-height-width.html" title="Harttle Land" target="_blank" rel="noopener">视口的宽高与滚动高度</a>.</p>
 
       
     </div>
