@@ -259,6 +259,158 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/10/JS-slice-方法返回一个新的数组对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nvpKong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="nvpKong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/10/JS-slice-方法返回一个新的数组对象/" itemprop="url">JS-slice()方法返回一个新的数组对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T20:19:20+08:00">
+                2019-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><code>slice()</code> 方法返回一个新的数组对象，这一对象是一个由 <code>begin</code> 和 <code>end</code> 决定的原数组的浅拷贝（包括 <code>begin</code>，不包括 <code>end</code>）。原始数组不会被改变。</p>
+<h5 id="实现strStr（）函数。"><a href="#实现strStr（）函数。" class="headerlink" title="实现strStr（）函数。"></a>实现strStr（）函数。</h5><p>给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置（从0开始）。如果不存在，则返回-1。<br>示例1：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：haystack=<span class="string">"hello"</span>，needle=<span class="string">"11"</span></span><br><span class="line">输出：2</span><br></pre></td></tr></table></figure>
+
+<p>示例2：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：haystack=<span class="string">"aaaaa"</span>，needle=<span class="string">"bbal"</span></span><br><span class="line">输出：-1</span><br></pre></td></tr></table></figure>
+
+<p><code>JS代码如下：</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var strStr = <span class="keyword">function</span> (haystack, needle) &#123;</span><br><span class="line">  <span class="keyword">if</span> (needle === <span class="string">''</span>) &#123;</span><br><span class="line">  	<span class="built_in">return</span> 0;</span><br><span class="line">  &#125;</span><br><span class="line">  const length = needle.length;</span><br><span class="line">  <span class="built_in">let</span> index = 0;</span><br><span class="line">  <span class="keyword">while</span> (index + length &lt;= haystack.length) &#123;</span><br><span class="line">    const str = haystack.slice(index, index + length);</span><br><span class="line">    <span class="keyword">if</span> (str === needle) &#123;</span><br><span class="line">    <span class="built_in">return</span> index;</span><br><span class="line">    &#125;</span><br><span class="line">	index++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">return</span> -1;</span><br><span class="line">&#125;</span><br><span class="line">var haystack = <span class="string">"20190818"</span>;</span><br><span class="line">var needle = <span class="string">"1953"</span>;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" title="MDN" target="_blank" rel="noopener">参考文献</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/JS-解决100-高的问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -358,7 +510,7 @@
 <p><code>JS代码如下：</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mounted: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  var orderHeight = document.body.clientHeight;</span><br><span class="line">  document.getElementById(<span class="string">"order-list"</span>).style.height=orderHeight+<span class="string">'px'</span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
-<p>参考文献 <a href="https://harttle.land/2016/04/24/client-height-width.html" title="Harttle Land" target="_blank" rel="noopener">视口的宽高与滚动高度</a>.</p>
+<p>参考文献:<a href="https://harttle.land/2016/04/24/client-height-width.html" title="Harttle Land" target="_blank" rel="noopener">视口的宽高与滚动高度</a>.</p>
 
           
         
@@ -1689,152 +1841,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/21/山山便签/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nvpKong">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="nvpKong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/21/山山便签/" itemprop="url">山山便签</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-21T23:51:52+08:00">
-                2019-08-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/鸡汤帖/" itemprop="url" rel="index">
-                    <span itemprop="name">鸡汤帖</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="粥于信，从前和以后我也喜欢的不得了。"><a href="#粥于信，从前和以后我也喜欢的不得了。" class="headerlink" title="粥于信，从前和以后我也喜欢的不得了。"></a>粥于信，从前和以后我也喜欢的不得了。</h3><p>“或许命运安排你们很多年前便是单独的世界，不需要有人站在柴门外轻敲，也不需要有人在院外冬树下呼喊打扰，但我不相信命运。”</p>
-<p>“荒原一路同行，我要益极多，长安冬日并肩而游，很是欢喜。”</p>
-<p>“雪夜红墙，你曾说过喜欢，我曾说过喜欢是不够的，而且最后证明确实是不够的，但至少你曾说过喜欢，我很喜欢。”</p>
-<p>“长安城与大河国相距甚远，但不及荒原路途遥远，若真想来，若真想去，也便极近，日后你来看我，或我来看你，或他山云雾之中再见，都是人生欢愉事。”</p>
-<p>“经历诸多事，我眼中河山已有新意，重逢那日，所书所写定然较今日更加壮阔，望你也多加努力，莫要令我失望。”</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1885,7 +1891,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
