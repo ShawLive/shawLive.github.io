@@ -259,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/10/JS-slice-方法返回一个新的数组对象/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/15/JS-BOM与DOM的区别与联系/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nvpKong">
@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/10/JS-slice-方法返回一个新的数组对象/" itemprop="url">JS-slice()方法返回一个新的数组对象</a></h1>
+                <a class="post-title-link" href="/2019/10/15/JS-BOM与DOM的区别与联系/" itemprop="url">JS-BOM与DOM的区别与联系</a></h1>
         
 
         <div class="post-meta">
@@ -290,8 +290,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T20:19:20+08:00">
-                2019-09-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-15T20:26:46+08:00">
+                2019-10-15
               </time>
             
 
@@ -352,505 +352,18 @@
       
         
           
-            <p><code>slice()</code> 方法返回一个新的数组对象，这一对象是一个由 <code>begin</code> 和 <code>end</code> 决定的原数组的浅拷贝（包括 <code>begin</code>，不包括 <code>end</code>）。原始数组不会被改变。</p>
-<h5 id="实现strStr（）函数。"><a href="#实现strStr（）函数。" class="headerlink" title="实现strStr（）函数。"></a>实现strStr（）函数。</h5><p>给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置（从0开始）。如果不存在，则返回-1。<br>示例1：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：haystack=<span class="string">"hello"</span>，needle=<span class="string">"11"</span></span><br><span class="line">输出：2</span><br></pre></td></tr></table></figure>
-
-<p>示例2：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：haystack=<span class="string">"aaaaa"</span>，needle=<span class="string">"bbal"</span></span><br><span class="line">输出：-1</span><br></pre></td></tr></table></figure>
-
-<p><code>JS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var strStr = <span class="keyword">function</span> (haystack, needle) &#123;</span><br><span class="line">  <span class="keyword">if</span> (needle === <span class="string">''</span>) &#123;</span><br><span class="line">  	<span class="built_in">return</span> 0;</span><br><span class="line">  &#125;</span><br><span class="line">  const length = needle.length;</span><br><span class="line">  <span class="built_in">let</span> index = 0;</span><br><span class="line">  <span class="keyword">while</span> (index + length &lt;= haystack.length) &#123;</span><br><span class="line">    const str = haystack.slice(index, index + length);</span><br><span class="line">    <span class="keyword">if</span> (str === needle) &#123;</span><br><span class="line">    <span class="built_in">return</span> index;</span><br><span class="line">    &#125;</span><br><span class="line">	index++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">return</span> -1;</span><br><span class="line">&#125;</span><br><span class="line">var haystack = <span class="string">"20190818"</span>;</span><br><span class="line">var needle = <span class="string">"1953"</span>;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" title="MDN" target="_blank" rel="noopener">参考文献</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/09/JS-解决100-高的问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nvpKong">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="nvpKong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/09/JS-解决100-高的问题/" itemprop="url">JS-解决100%高的问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-09T23:23:59+08:00">
-                2019-09-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在<code>Vue.js</code>页面中使用了<code>Element</code>组件，它会自动给我们生产虚拟DOM，我们无法设置高度100%；这时候可以利用javascript，来设置100%高度问题。<br><code>HTML代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;div id=<span class="string">"order-list"</span>&gt;DIV高度为100%&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<p><code>JS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mounted: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  var orderHeight = document.body.clientHeight;</span><br><span class="line">  document.getElementById(<span class="string">"order-list"</span>).style.height=orderHeight+<span class="string">'px'</span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p>参考文献:<a href="https://harttle.land/2016/04/24/client-height-width.html" title="Harttle Land" target="_blank" rel="noopener">视口的宽高与滚动高度</a>.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/25/ES6之箭头函数/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nvpKong">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="nvpKong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/25/ES6之箭头函数/" itemprop="url">ES6之箭头函数</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-25T23:48:36+08:00">
-                2019-08-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>ES6标准新增了一种新的函数：Arrow Function（箭头函数）。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x =&gt; x * X</span><br></pre></td></tr></table></figure>
-
-<p>上面的箭头函数相当于：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> (x) &#123;</span><br><span class="line">  <span class="built_in">return</span> x * x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>箭头函数看上去是匿名函数的一种简写，但实际上，箭头函数和匿名函数有个明显的区别：箭头函数内部的<code>this</code>是词法作用域，由上下文确定。<br><code>JS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">var factory = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  this.a = <span class="string">'a'</span>;</span><br><span class="line">  this.b = <span class="string">'b'</span>;</span><br><span class="line">  this.c = &#123;</span><br><span class="line">    a: <span class="string">'a+'</span>,</span><br><span class="line">    b: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">      <span class="built_in">return</span> this.a</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(new factory().c.b());// a+</span><br><span class="line"></span><br><span class="line">var factory = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  this.a = <span class="string">'a'</span>;</span><br><span class="line">  this.b = <span class="string">'b'</span>;</span><br><span class="line">  this.c = &#123;</span><br><span class="line">    a: <span class="string">'a+'</span>,</span><br><span class="line">    b: () =&gt; &#123;</span><br><span class="line">      <span class="built_in">return</span> this.a</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; </span><br><span class="line">&#125; </span><br><span class="line">console.log(new factory().c.b());// a</span><br></pre></td></tr></table></figure>
-
-<p>使用箭头函数简化排序时传入的函数：<br><code>JS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 正序</span><br><span class="line">&#123;</span><br><span class="line">  var arr = [18, 8, 2019, 0];</span><br><span class="line">  arr.sort((x, y) =&gt; &#123;</span><br><span class="line">   <span class="built_in">return</span> x &lt; y ? -1 : ((x = y) ? 0 : 1)</span><br><span class="line">  &#125;)</span><br><span class="line">  console.log(arr);// [0, 8, 18, 2019]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//倒叙</span><br><span class="line">&#123;</span><br><span class="line">  var arr = [18, 8, 2019, 0];</span><br><span class="line">  arr.sort((x, y) =&gt; &#123;</span><br><span class="line">    <span class="built_in">return</span> x &gt; y ? -1 : ((x = y) ? 0 : 1)</span><br><span class="line">  &#125;)</span><br><span class="line">  console.log(arr);// [2019, 18, 8, 0]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注：<code>sort()</code>方法用对数组的元素进行排序，并返回数组。默认排序顺序是在将元素转换为字符串，然后比较它们的UTF-16代码单元值序列时构建的。由于它取决于具体实现，因此无法保证排序的时间和空间复杂性。<br><a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1031549578462080" title="廖雪峰" target="_blank" rel="noopener">参考文献1</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank" rel="noopener">参考文献2</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/JS之数据转换/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nvpKong">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="nvpKong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/22/JS之数据转换/" itemprop="url">JS之数据转换</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T18:43:59+08:00">
-                2019-08-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="声明变量注意："><a href="#声明变量注意：" class="headerlink" title="声明变量注意："></a>声明变量注意：</h3><p>1、声明变量时虽然可以不加<code>var</code>关键字，但是…</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var stuname1 = “赵小臭”；</span><br><span class="line">stuname2 = “凑凑”;</span><br></pre></td></tr></table></figure>
-
-<p>如果省略了<code>var</code>关键字，那么声明的就是“<code>全局变量</code>”，有可能造成“<code>全局污染</code>”。（建议每个变量前最好加上<code>var</code>）。<br>2、如果声明变量没有赋值的话，那么将自动赋值为<code>underfined</code>。</p>
-<h3 id="数据类型："><a href="#数据类型：" class="headerlink" title="数据类型："></a>数据类型：</h3><p>1、<code>number</code>类型（数字类型，表示32位整数，也可以表示64位的浮动数）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var num1 = 520;</span><br><span class="line">var num2 = 13.14;</span><br></pre></td></tr></table></figure>
-
-<p>2、<code>string</code>类型（字符串类型）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var n1 = <span class="string">"520"</span>;</span><br><span class="line">var n2 = <span class="string">"like"</span></span><br></pre></td></tr></table></figure>
-
-<p>3、<code>boolean</code>类型（布尔类型，仅有两个值：true和false，做算术运算时，true = 1，false= 0）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var result1 = <span class="literal">true</span>;//真</span><br><span class="line">var result2 = <span class="literal">false</span>;//假</span><br><span class="line">var result3 = <span class="string">"true"</span>;//string类型</span><br></pre></td></tr></table></figure>
-
-<p>4、<code>undefinde</code>类型（不存在该数据，未定义。场合：1、声明变量未赋值2、对象属性不存在）</p>
-<h3 id="代码调试"><a href="#代码调试" class="headerlink" title="代码调试"></a>代码调试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alert();//弹出框</span><br><span class="line">console.log();//控制台打印输出</span><br><span class="line">prompt ();弹出输入框</span><br><span class="line">document.write();//文档页面输出内容</span><br></pre></td></tr></table></figure>
-
-<h3 id="数据隐式转换"><a href="#数据隐式转换" class="headerlink" title="数据隐式转换"></a>数据隐式转换</h3><p>1、<code>typeof</code>（运算符，查看数据类型, 有2种使用方式：<code>typeof(表达式)</code>和<code>typeof 变量名</code>，第一种是对表达式做运算，第二种是对变量做运算。）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(typeof a);//<span class="string">'undefined'</span></span><br><span class="line">console.log(typeof(<span class="literal">true</span>));//<span class="string">'boolean'</span></span><br></pre></td></tr></table></figure>
-
-<p>2、<code>NaN</code>(<code>NaN</code>属性代表一个“<code>不是数字</code>”的值)<br>Not a Number：不是一个数字<br>IsNaN();是（不是一个数字）<br>返回结果：true或false<br>true：不是一个数字<br>false：是一个数字<br>虽然 NaN 意味着“不是数字”，但是它的类型，不管你信不信，是 Number：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(typeof NaN === <span class="string">"number"</span>);// logs <span class="string">"true"</span></span><br></pre></td></tr></table></figure>
-
-<p>NaN 和任何东西比较——甚至是它自己本身！——结果是false：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(NaN === NaN);// logs <span class="string">"false"</span></span><br></pre></td></tr></table></figure>
-
-<p>3、总结</p>
+            <h3 id="DOM（文档对象模型）"><a href="#DOM（文档对象模型）" class="headerlink" title="DOM（文档对象模型）"></a>DOM（文档对象模型）</h3><p><code>DOM</code> 是 W3C 标准，DOM的最根本对象是 document（window.document），这个对象实际上是 window 对象的属性，这个对象的独特之处是这个是唯一一个既属于 BOM 又属于 DOM 的对象。<br>DOM 是 HTML 和 XML 的应用程序接口（API）。DOM代表着被加载到浏览器窗口里的当前网页。</p>
+<h3 id="BOM（浏览器对象模型）"><a href="#BOM（浏览器对象模型）" class="headerlink" title="BOM（浏览器对象模型）"></a>BOM（浏览器对象模型）</h3><p><code>BOM</code> 没有相关标准，BOM 的最核心对象是 window 对象。window 对象对应着浏览器窗口本身，这个对象的属性和方法通常被称为 BOM。<br>BOM 主要处理浏览器窗口和框架，不过通常浏览器特定的 JavaScript 扩展都被看做 BOM 的一部分。这些扩展包括：</p>
 <ol>
-<li>数字 + 字符串 ：将数字转换为字符串</li>
-<li>数字 + boolean ：将 boolean 转换为 number类型</li>
-<li>数字 + undefined ：结果为 NaN，NaN的类型为 number</li>
-<li>字符串 + boolean ：将boolean 转换为 字符串</li>
-<li>boolean + boolean ：都转换成number在做相加运算</li>
-<li>不同类型的数据在计算过程中会进行”自动转换”</li>
+<li>弹出新的浏览器窗口</li>
+<li>移动、关闭浏览器窗口以及调整窗口大小</li>
+<li>提供 Web 浏览器详细信息的定位对象</li>
+<li>提供用户屏幕分辨率详细信息的屏幕对象</li>
 </ol>
-<h3 id="数据强制转换"><a href="#数据强制转换" class="headerlink" title="数据强制转换"></a>数据强制转换</h3><p>1、<code>String();</code>——将任意数据类型的数据转换为“字符串”</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var num = 1314;</span><br><span class="line">var result = String(num);</span><br><span class="line">console.log(result);// logs 1314</span><br><span class="line">console.log(typeof result);// logs string</span><br></pre></td></tr></table></figure>
+<h3 id="BOM与DOM的联系"><a href="#BOM与DOM的联系" class="headerlink" title="BOM与DOM的联系"></a>BOM与DOM的联系</h3><img src="http://leeyouth.cn/static/images/BOMandDOM.png">
 
-<p>2、<code>parseInt();</code>——将任意类型的数据转换为整数</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var r1 = <span class="string">"520"</span>;</span><br><span class="line">var result1 = parseInt(r1);</span><br><span class="line">console.log(result1);// logs 520</span><br><span class="line">var r2 = 13.14;</span><br><span class="line">var result2 = parseInt(r2);</span><br><span class="line">console.log(result2);// logs 13</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.jianshu.com/p/86acc95f1eb8" target="_blank" rel="noopener">参考文献1</a><br><a href="https://segmentfault.com/a/1190000000654274" target="_blank" rel="noopener">参考文献2</a></p>
 
-<p>3、<code>parseFloat();</code>——将指定数据转换为小数（浮点数）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var r1 = <span class="string">"5.20"</span>;</span><br><span class="line">var result1 = parseFloat(r1);</span><br><span class="line">console.log(result1);// logs 5.2</span><br><span class="line">var r2 = <span class="string">"13ABC"</span>;</span><br><span class="line">var result2 = parseFloat(r2);</span><br><span class="line">console.log(result2);// logs 13</span><br></pre></td></tr></table></figure>
-
-<p>4、<code>Number();</code>——把一个string解析为number类型，如果待转换字符中包含非法字符，则返回NaN</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var r1 = <span class="string">"5.20"</span>;</span><br><span class="line">var result1 = Number(r1);</span><br><span class="line">console.log(result1);// logs 5.2</span><br><span class="line">var r2 = <span class="string">"13ABC"</span>;</span><br><span class="line">var result2 = Number(r2);</span><br><span class="line">console.log(result2);// logs NaN</span><br></pre></td></tr></table></figure>
           
         
       
@@ -898,7 +411,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/JS之元素显示隐藏效果/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/11/JS-原型和原型链/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nvpKong">
@@ -917,7 +430,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/22/JS之元素显示隐藏效果/" itemprop="url">JS之元素显示隐藏效果</a></h1>
+                <a class="post-title-link" href="/2019/10/11/JS-原型和原型链/" itemprop="url">JS-原型和原型链</a></h1>
         
 
         <div class="post-meta">
@@ -929,8 +442,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T18:29:20+08:00">
-                2019-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-11T23:27:33+08:00">
+                2019-10-11
               </time>
             
 
@@ -991,11 +504,36 @@
       
         
           
-            <p><code>HTML代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=<span class="string">"img/love.jpg"</span> alt=<span class="string">""</span> id=<span class="string">"img"</span>&gt;</span><br><span class="line">&lt;button id=<span class="string">"btn_show"</span>&gt;显示&lt;/button&gt;</span><br><span class="line">&lt;button id=<span class="string">"btn_hidden"</span>&gt;隐藏&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+            <h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//构造函数命名时，首字母要大写</span><br><span class="line"><span class="keyword">function</span> Foo(name, age) &#123;</span><br><span class="line">  this.name = name</span><br><span class="line">  this.age = age</span><br><span class="line">  this.class = <span class="string">'class-1'</span></span><br><span class="line">  // <span class="built_in">return</span> this // 默认有这一行</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var f = new Foo(<span class="string">'zhaoxiaocou'</span>, 26)</span><br><span class="line">// var f1 = new Foo(<span class="string">'coucou'</span>, 27) // 创建多个对象</span><br></pre></td></tr></table></figure>
 
-<p><code>JS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    window.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        /*window表示窗口 onload是加载 意思是页面加载完毕后，才执行里面的js，所以可以放在顶端*/</span><br><span class="line">        var img = document.gitElementById(<span class="string">"img"</span>);</span><br><span class="line">        var btn_show = document.gitElementById(<span class="string">"btn_show"</span>);</span><br><span class="line">        var btn_hidden = document.gitElementById(<span class="string">"btn_hidden"</span>);</span><br><span class="line"></span><br><span class="line">        btn_show.onclick = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            img.style.display = <span class="string">"block"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        /*点击显示按钮时，img的样式style的display属性赋值为<span class="string">"block"</span>，下同理*/</span><br><span class="line">        btn_hidden.onclick = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            img.style.display = <span class="string">"none"</span>;</span><br><span class="line">            /*display: none隐藏后的元素不占据任何空间*/</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>描述 new 一个对象的过程</p>
+<ol>
+<li>创建一个新对象</li>
+<li>this 指向这个新对象</li>
+<li>执行代码，即对this 赋值</li>
+<li>返回this</li>
+</ol>
+<h3 id="原型规则"><a href="#原型规则" class="headerlink" title="原型规则"></a>原型规则</h3><p>1、所有的引用类型（数组、对象、函数），都具有对象特性，即可自由扩展属性（除了“null”意外）。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;&#125;; obj.a = 100;</span><br><span class="line">var arr = []; arr.a = 100;</span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span> () &#123;&#125;</span><br><span class="line">fn.a = 100;</span><br></pre></td></tr></table></figure>
+
+<p>2、所有的引用类型（数组、对象、函数），都有一个_proto_属性（隐式原型），属性值是一个普通的对象。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">console.log(obj._proto_);</span><br><span class="line">console.log(arr._proto_);</span><br><span class="line">console.log(fn._proto_);</span><br></pre></td></tr></table></figure>
+
+<p>3、所有的函数，都有一个prototype属性（显示原型），属性值也是一个普通的对象。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(fn.prototype)</span><br></pre></td></tr></table></figure>
+
+<p>4、所有的引用类型（数组、对象、函数），_proto属性值指向它的构造函数的”prototype”属性值。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(obj._proto_ === Object.prototype)</span><br></pre></td></tr></table></figure>
+
+<p>5、当试图得到一个引用类型（数组、对象、函数）的某个属性时，如果这个引用类型本身没有这个属性，那么会去它的__proto_（即它的构造函数的prototype）中寻找。</p>
+<img src="http://leeyouth.cn/static/images/yuanxinglian.jpg">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Foo(name, age) &#123;</span><br><span class="line">  this.name = name</span><br><span class="line">&#125;</span><br><span class="line">Foo.prototype.alertName = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  alert(this.name)</span><br><span class="line">&#125;</span><br><span class="line">// 创建示例</span><br><span class="line">var f = new Foo(<span class="string">'zhaoxiaocou'</span>)</span><br><span class="line">f.printName = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  console.log(this.name)</span><br><span class="line">&#125;</span><br><span class="line">// 测试</span><br><span class="line">f.printName()</span><br><span class="line">f.alertName()</span><br><span class="line"></span><br><span class="line">// toString() 方法返回一个表示该对象的字符串。</span><br><span class="line">// toString() 返回 <span class="string">"[object type]"</span>，其中 <span class="built_in">type</span> 是对象的类型。</span><br><span class="line">console.log(f.toString()) //[object Object], 要去 f._proto_._proto_ 中去找</span><br></pre></td></tr></table></figure>
+
+<h3 id="循环对象自身的属性"><a href="#循环对象自身的属性" class="headerlink" title="循环对象自身的属性"></a>循环对象自身的属性</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var item </span><br><span class="line"><span class="keyword">for</span> (item <span class="keyword">in</span> f) &#123;</span><br><span class="line">  // 高级浏览器已经在<span class="keyword">for</span> <span class="keyword">in</span>中屏蔽了来自原型的属性</span><br><span class="line">  // 但是这里建议大家还是加上这个判断，保证程序的健壮性</span><br><span class="line">  <span class="keyword">if</span> (f.hasOwnProperty(item)) &#123;</span><br><span class="line">    console.log(item)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="如何准确判断一个变量是数组类型"><a href="#如何准确判断一个变量是数组类型" class="headerlink" title="如何准确判断一个变量是数组类型"></a>如何准确判断一个变量是数组类型</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = []</span><br><span class="line">arr instanceof Array // <span class="literal">true</span></span><br><span class="line">typeof arr // object, typeof 是无法判断是否是数据的</span><br></pre></td></tr></table></figure>
+
+<h3 id="原型链继承的例子"><a href="#原型链继承的例子" class="headerlink" title="原型链继承的例子"></a>原型链继承的例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">// 写一个封装DOM查询的例子</span><br><span class="line"><span class="keyword">function</span> Elem(id) &#123;</span><br><span class="line">  this.elem = document.getElementById(id)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Elem.prototype.html = <span class="keyword">function</span> (val) &#123;</span><br><span class="line">  var elem = this.elem</span><br><span class="line">  <span class="keyword">if</span> (val) &#123;</span><br><span class="line">    elem.innerHTML = val</span><br><span class="line">    <span class="built_in">return</span> this // 链式操作</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">return</span> elem.innerHTML</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Elem.prototype.on = <span class="keyword">function</span> (<span class="built_in">type</span>, fn) &#123;</span><br><span class="line">  var elem = this.elem</span><br><span class="line">  elem.addEventListener(<span class="built_in">type</span>, fn)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var div1 = new Elem(<span class="string">'div1'</span>)</span><br><span class="line">// console.log(div1.html())</span><br><span class="line"></span><br><span class="line">div1.html(<span class="string">'&lt;p&gt;hello, weizhideziji.&lt;/p&gt;'</span>)</span><br><span class="line">div1.on(<span class="string">'click'</span>, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  alert(<span class="string">'clicked'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 
           
@@ -1045,7 +583,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/HTML中清除浮动的几种方式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/10/JS-事件冒泡和事件捕获/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nvpKong">
@@ -1064,7 +602,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/22/HTML中清除浮动的几种方式/" itemprop="url">HTML中清除浮动的几种方式</a></h1>
+                <a class="post-title-link" href="/2019/10/10/JS-事件冒泡和事件捕获/" itemprop="url">JS-事件冒泡和事件捕获</a></h1>
         
 
         <div class="post-meta">
@@ -1076,8 +614,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T17:46:45+08:00">
-                2019-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-10T21:40:44+08:00">
+                2019-10-10
               </time>
             
 
@@ -1138,40 +676,47 @@
       
         
           
-            <h3 id="浮动产生的原因："><a href="#浮动产生的原因：" class="headerlink" title="浮动产生的原因："></a>浮动产生的原因：</h3><p>子级盒子对象使用了CSS中<code>float</code>属性，导致父级盒子对象不能被撑开。</p>
-<h3 id="浮动产出的副作用："><a href="#浮动产出的副作用：" class="headerlink" title="浮动产出的副作用："></a>浮动产出的副作用：</h3><ol>
-<li>父级盒子对象的背景不能显示</li>
-<li>父级盒子对象的边框不能撑开</li>
-<li>父级盒子对象的<code>margin</code>和<code>padding</code>设置值不能正确显示</li>
+            <h3 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h3><p>事件流描述的就是从页面中接收事件的顺序。而 IE 和 Netscape 提出了完全相反的事件流概念。IE事件流是事件冒泡，而Netscape的事件流就是事件捕获。</p>
+<h3 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h3><p>IE的事件流叫做事件冒泡。即事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播到较为不具体的节点（文档）。所有现代浏览器都支持事件冒泡，并且会将事件一直冒泡到window对象。</p>
+<img src="http://leeyouth.cn/static/images/shijian_maopao.png">
+
+<h3 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h3><p>事件捕获的思想是不太具体的节点应该更早的接收到事件，而在最具体的节点应该最后接收到事件。事件捕获的用意在于事件到达预定目标之前捕获它。IE9+、Safari、Chrome、Opera和Firefox支持，且从window开始捕获（尽管DOM2级事件规范要求从document）。由于老版本浏览器不支持，所以很少有人使用事件捕获。</p>
+<img src="http://leeyouth.cn/static/images/shijian_buhuo.png">
+
+<h3 id="addEventListener的第三个参数"><a href="#addEventListener的第三个参数" class="headerlink" title="addEventListener的第三个参数"></a>addEventListener的第三个参数</h3><p>addEventListener的第三个参数就是为冒泡和捕获准备的.<br>addEventListener有三个参数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">element.addEventListener(event, <span class="keyword">function</span>, useCapture)</span><br></pre></td></tr></table></figure>
+
+<p>第一个参数是需要绑定的事件<br>第二个参数是触发事件后要执行的函数<br>第三个参数默认值是false，表示在事件冒泡阶段调用事件处理函数;如果参数为true，则表示在事件捕获阶段调用处理函数。</p>
+<h3 id="冒泡的案例"><a href="#冒泡的案例" class="headerlink" title="冒泡的案例"></a>冒泡的案例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"click_div"</span>&gt;</span><br><span class="line">  &lt;p id=<span class="string">"click_p"</span>&gt;click me!&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">click_div.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">      console.log(<span class="string">"div 冒泡事件"</span>);         </span><br><span class="line">&#125;,<span class="literal">false</span>);</span><br><span class="line">click_p.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">        console.log(<span class="string">"p 冒泡事件"</span>);</span><br><span class="line">&#125;,<span class="literal">false</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当我们点击click_p的时候，执行结果如下：<code>p 冒泡事件 -&gt; div 冒泡事件</code></p>
+<h3 id="捕获的案例"><a href="#捕获的案例" class="headerlink" title="捕获的案例"></a>捕获的案例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"click_div"</span>&gt;</span><br><span class="line">  &lt;p id=<span class="string">"click_p"</span>&gt;click me!&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">click_div.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">    console.log(<span class="string">"div 捕获事件"</span>);</span><br><span class="line">&#125;,<span class="literal">true</span>);</span><br><span class="line">    </span><br><span class="line">click_p.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">    console.log(<span class="string">"p 捕获事件"</span>);</span><br><span class="line">&#125;,<span class="literal">true</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当我们点击click_p的时候，执行结果如下：<code>div 捕获事件 -&gt; p 捕获事件</code></p>
+<h3 id="事件捕获vs事件冒泡"><a href="#事件捕获vs事件冒泡" class="headerlink" title="事件捕获vs事件冒泡"></a>事件捕获vs事件冒泡</h3><p>当事件捕获和事件冒泡一起存在的情况，事件又是如何触发呢。</p>
+<img src="http://leeyouth.cn/static/images/shijianliu.png">
+<p>这里记被点击的DOM节点为target节点</p>
+<ol>
+<li>document 往 target节点，捕获前进，遇到注册的捕获事件立即触发执行</li>
+<li>到达target节点，触发事件（到达target节点，触发事件（对于target节点上，捕获与冒泡事件的执行顺序取决于注册顺序）</li>
+<li>target节点 往 document 方向，冒泡前进，遇到注册的冒泡事件立即触发</li>
 </ol>
-<h3 id="清除浮动的方法："><a href="#清除浮动的方法：" class="headerlink" title="清除浮动的方法："></a>清除浮动的方法：</h3><ol>
-<li>对父级设置适合CSS高度</li>
-<li><code>clear:both</code>清除浮动</li>
-</ol>
-<p><code>HTML代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"fatherDiv"</span>&gt;</span><br><span class="line">    &lt;div class=<span class="string">"boyLeft"</span>&gt;左浮动&lt;div&gt;</span><br><span class="line">    &lt;div class=<span class="string">"boyRight"</span>&gt;右浮动&lt;div&gt;</span><br><span class="line">    &lt;div calss=<span class="string">"clear"</span>&gt;</span><br><span class="line">&lt;div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"click_div"</span>&gt;</span><br><span class="line">  &lt;p id=<span class="string">"click_p"</span>&gt;click me!&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">click_div.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">      console.log(<span class="string">"div 冒泡事件"</span>);         </span><br><span class="line">&#125;,<span class="literal">false</span>);</span><br><span class="line">click_p.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">        console.log(<span class="string">"p 冒泡事件"</span>);</span><br><span class="line">&#125;,<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">click_div.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">    console.log(<span class="string">"div 捕获事件"</span>);</span><br><span class="line">&#125;,<span class="literal">true</span>);</span><br><span class="line">    </span><br><span class="line">click_p.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">    console.log(<span class="string">"p 捕获事件"</span>);</span><br><span class="line">&#125;,<span class="literal">true</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<p><code>CSS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">.fatherDiv &#123;</span><br><span class="line">    width: 168px; </span><br><span class="line">    background:red;</span><br><span class="line">&#125;</span><br><span class="line">.boyLeft &#123;</span><br><span class="line">    <span class="built_in">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line">.boyRight &#123;</span><br><span class="line">    <span class="built_in">float</span>: right;</span><br><span class="line">&#125;</span><br><span class="line">/* 清除浮动代码 */</span><br><span class="line">.clear &#123;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>当我们点击click_p的时候，执行结果如下：<code>div 捕获事件 -&gt; p 冒泡事件 -&gt; p 捕获事件 -&gt; div 冒泡事件</code></p>
+<h3 id="阻止冒泡和捕获"><a href="#阻止冒泡和捕获" class="headerlink" title="阻止冒泡和捕获"></a>阻止冒泡和捕获</h3><p>方法一：<br>cancelBubble 已经不在标准中了，相信迟到会移除这一特性的。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">event.cancelBubble = <span class="literal">true</span>; // IE下阻止冒泡、捕获</span><br></pre></td></tr></table></figure>
 
-<ol start="3">
-<li>父级div定义<code>overflow:hidden</code></li>
-</ol>
-<p><code>HTML代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"fatherDiv"</span>&gt;</span><br><span class="line">    &lt;div class=<span class="string">"boyLeft"</span>&gt;左浮动&lt;div&gt;</span><br><span class="line">    &lt;div class=<span class="string">"boyRight"</span>&gt;右浮动&lt;div&gt;</span><br><span class="line">&lt;div&gt;</span><br></pre></td></tr></table></figure>
+<p>方法二：<br>event.stopPropagation() 方法阻止事件冒泡到父元素，阻止任何父事件处理程序被执行。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">event.stopPropagation() // 其它浏览器下阻止冒泡、捕获</span><br></pre></td></tr></table></figure>
 
-<p><code>CSS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.fatherDiv &#123;</span><br><span class="line">    width: 168px; </span><br><span class="line">    background:red; </span><br><span class="line">    overflow:hidden;/* 清除浮动代码 */</span><br><span class="line">&#125;</span><br><span class="line">.boyLeft &#123;</span><br><span class="line">    <span class="built_in">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line">.boyRight &#123;</span><br><span class="line">    <span class="built_in">float</span>: right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="阻止冒泡的案例"><a href="#阻止冒泡的案例" class="headerlink" title="阻止冒泡的案例"></a>阻止冒泡的案例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"click_div"</span>&gt;</span><br><span class="line">  &lt;p id=<span class="string">"click_p"</span>&gt;click me!&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">click_div.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">    console.log(<span class="string">"div 冒泡事件"</span>);         </span><br><span class="line">&#125;,<span class="literal">false</span>);</span><br><span class="line">click_p.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">	// e.cancelBubble = <span class="literal">true</span></span><br><span class="line">    e.stopPropagation();</span><br><span class="line">    console.log(<span class="string">"p 冒泡事件"</span>);</span><br><span class="line">&#125;,<span class="literal">false</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<ol start="4">
-<li>使用伪元素:<code>after</code>清除浮动(缺点：ie6-7不支持伪元素：after，使用zoom:1触发hasLayout)</li>
-</ol>
-<p><code>HTML代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"fatherDiv"</span>&gt;</span><br><span class="line">    &lt;div class=<span class="string">"boyLeft"</span>&gt;左浮动&lt;div&gt;</span><br><span class="line">    &lt;div class=<span class="string">"boyRight"</span>&gt;右浮动&lt;div&gt;</span><br><span class="line">&lt;div&gt;</span><br></pre></td></tr></table></figure>
+<p>当我们点击click_p的时候，执行结果如下：<code>p 冒泡事件</code></p>
+<h3 id="阻止捕获的案例"><a href="#阻止捕获的案例" class="headerlink" title="阻止捕获的案例"></a>阻止捕获的案例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"click_div"</span>&gt;</span><br><span class="line">  &lt;p id=<span class="string">"click_p"</span>&gt;click me!&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">click_div.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">    // e.cancelBubble = <span class="literal">true</span></span><br><span class="line">    e.stopPropagation();</span><br><span class="line">    console.log(<span class="string">"div 捕获事件"</span>);</span><br><span class="line">&#125;,<span class="literal">true</span>);</span><br><span class="line">    </span><br><span class="line">click_p.addEventListener(<span class="string">"click"</span>,<span class="keyword">function</span>(e)&#123;</span><br><span class="line">    console.log(<span class="string">"p 捕获事件"</span>);</span><br><span class="line">&#125;,<span class="literal">true</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<p><code>CSS代码如下：</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.fatherDiv &#123;</span><br><span class="line">    width: 168px; </span><br><span class="line">    background:red; </span><br><span class="line">    zoom:1;/*IE浏览器的专有属性*/</span><br><span class="line">&#125;</span><br><span class="line">.fatherDiv:after &#123;</span><br><span class="line">    /* 这三句必须写 */</span><br><span class="line">    display:block;  /*变成块级元素*/</span><br><span class="line">    clear:both;/*清除浮动*/</span><br><span class="line">    /* 必须有这样写 */</span><br><span class="line">    content:<span class="string">""</span>; /*内容为空*/</span><br><span class="line"></span><br><span class="line">    /* 这两句写不写无所谓 */</span><br><span class="line">    visibility:hidden; /*将元素隐藏，但是在网页中该占的位置还是占着*/</span><br><span class="line">    height:0;</span><br><span class="line">&#125;</span><br><span class="line">.boyLeft &#123;</span><br><span class="line">    <span class="built_in">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line">.boyRight &#123;</span><br><span class="line">    <span class="built_in">float</span>: right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<p>当我们点击click_p的时候，执行结果如下：<code>div 捕获事件</code></p>
+<p><a href="https://segmentfault.com/a/1190000005654451" target="_blank" rel="noopener">参考文献1</a><br><a href="https://segmentfault.com/a/1190000008227026" target="_blank" rel="noopener">参考文献2</a></p>
 
           
         
@@ -1220,7 +765,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/HTML中的几种定位方式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/10/JS-实现冒泡排序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nvpKong">
@@ -1239,7 +784,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/22/HTML中的几种定位方式/" itemprop="url">HTML中的几种定位方式</a></h1>
+                <a class="post-title-link" href="/2019/10/10/JS-实现冒泡排序/" itemprop="url">JS-实现冒泡排序</a></h1>
         
 
         <div class="post-meta">
@@ -1251,8 +796,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T17:26:38+08:00">
-                2019-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-10T01:42:46+08:00">
+                2019-10-10
               </time>
             
 
@@ -1313,19 +858,13 @@
       
         
           
-            <h3 id="CSS中position-属性值："><a href="#CSS中position-属性值：" class="headerlink" title="CSS中position 属性值："></a>CSS中position 属性值：</h3><ul>
-<li><code>absolute</code>：生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</li>
-<li><code>relative</code>：生成相对定位的元素，相对于其正常位置进行定位。因此，”left:20” 会向元素的 LEFT 位置添加 20 像素。</li>
-<li><code>fixed</code>：生成绝对定位的元素，相对于浏览器窗口进行定位。</li>
-<li><code>static</code>：默认值。没有定位，元素出现在正常的文档流中（忽略 top, bottom, left, right 或者 z-index 声明）。</li>
-<li><code>inherit</code>：规定应该从父元素继承 position 属性的值。</li>
-</ul>
-<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><ol>
-<li>绝对定位会使元素从文档流中被删除，结果就是该元素原本占据的空间被其它元素所填充(如果不存在一个有着position属性的父对象，那么就会以body为定位对象，按照浏览器的窗口进行定位)。</li>
-<li>相对定位的元素仍然在文档流中，仍然占据着它本来占据的位置空间——虽然它现在已经不在本来的位置了（相对定位是相对于元素自己本身的位置）。</li>
-<li>混合相对定位和绝对定位时，如果对一个父元素设置relative，而对它的一个子元素设置absolute,则子元素的绝对定位的参照物为父元素。</li>
-<li>fixed定位的参照物总是当前的文档（fixed总是以body为定位对象的，按照浏览器的窗口进行定位）。</li>
-</ol>
+            <p>对数组进行 冒泡排序，冒泡排序是容易理解的一种排序算法。</p>
+<h3 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h3><p>数组中有 n 个数，比较每相邻两个数，如果前者大于后者，就把两个数交换位置；这样一来，第一轮就可以选出一个最大的数放在最后面；那么经过 n-1（数组的 length - 1） 轮，就完成了所有数的排序。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var arr = [3, 1, 9, 6]</span><br><span class="line"><span class="keyword">function</span> bubbleSort(arr) &#123;</span><br><span class="line">  var max = arr.length - 1</span><br><span class="line">  <span class="keyword">for</span> (var i = 0; i &lt; max; i++) &#123;</span><br><span class="line">    // 声明一个变量，作为标志位</span><br><span class="line">    var <span class="keyword">done</span> = <span class="literal">true</span>;</span><br><span class="line">    // 根据外层<span class="keyword">for</span>循环的i，逐渐减少内层<span class="keyword">for</span>循环的次数</span><br><span class="line">    <span class="keyword">for</span> (var j = 0; j &lt; max - i; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (arr[j]&gt;arr[j + 1]) &#123;</span><br><span class="line">        var temp = arr[j + 1]</span><br><span class="line">        arr[j + 1] = arr[j]</span><br><span class="line">        arr[j] = temp</span><br><span class="line">        <span class="keyword">done</span> = <span class="literal">false</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">done</span>) &#123;</span><br><span class="line">      <span class="built_in">break</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">return</span> arr</span><br><span class="line">&#125;</span><br><span class="line">bubbleSort(arr)</span><br></pre></td></tr></table></figure>
+
+<h3 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h3><p>时间复杂度： <code>平均时间复杂度O(n*n) 、最好情况O(n)、最差情况O(n*n)</code><br>空间复杂度： O(1)<br>稳定性：稳定</p>
+<p>时间复杂度指的是一个算法执行所耗费的时间<br>空间复杂度指运行完一个程序所需内存的大小<br>稳定指，如果a=b,a在b的前面，排序后a仍然在b的前面<br>不稳定指，如果a=b，a在b的前面，排序后可能会交换位置</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>1、外层 for 循环控制循环次数<br>2、内层 for 循环进行两数交换，找每次的最大数，排到最后<br>3、设置一个标志位，减少不必要的循环<br><a href="https://segmentfault.com/a/1190000014175918" target="_blank" rel="noopener">参考文献</a></p>
 
           
         
@@ -1374,7 +913,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/博客框架HEXO-写作篇/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/09/JS-new-使用与不使用实例化对象的区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nvpKong">
@@ -1393,7 +932,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/22/博客框架HEXO-写作篇/" itemprop="url">博客框架HEXO-写作篇</a></h1>
+                <a class="post-title-link" href="/2019/10/09/JS-new-使用与不使用实例化对象的区别/" itemprop="url">JS-new 使用与不使用实例化对象的区别</a></h1>
         
 
         <div class="post-meta">
@@ -1405,8 +944,759 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T17:07:06+08:00">
-                2019-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-09T00:00:32+08:00">
+                2019-10-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>JavaScript 中并没有真正的类，但 JavaScript 中有<code>构造函数</code>和 <code>new 运算符</code>。构造函数用来给实例对象初始化属性和值。任何 JavaScript 函数都可以用做构造函数，构造函数必须使用 <code>new 运算符</code>作为前缀来创建新的实例。<br>默认情况下，如果你的构造函数中没有返回任何内容，就会返回this——当前的上下文。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Friend (name) &#123;</span><br><span class="line">  this.name = name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var my1 = Friend(<span class="string">'xiaochou'</span>)</span><br><span class="line">var my2 = new Friend(<span class="string">'xiaochou'</span>)</span><br><span class="line"></span><br><span class="line">console.log(my1) // undefined</span><br><span class="line">console.log(my2) // Friend &#123;name: <span class="string">"xiaochou"</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第一种不是实例化，只是调用函数把<code>返回值</code>赋给变量。<br>第二种是构造函数式，即通过 <code>new 运算符</code>调用构造函数 <code>Function</code> 来创建函数，达到一种创建自定义对象 + 继承公有属性/方法的效果。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/08/JS-递归算法计算一个数的阶乘/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nvpKong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="nvpKong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/08/JS-递归算法计算一个数的阶乘/" itemprop="url">JS-递归算法计算一个数的阶乘</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-08T23:47:29+08:00">
+                2019-10-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>计算一个整数的阶乘<br>如果用字母n来代表一个整数，阶乘代表着所有小于或等于n的整数的乘积。<br>阶乘通常简写成 n!<br>例如:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5! = 1 * 2 * 3 * 4 * 5 = 120</span><br></pre></td></tr></table></figure>
+
+<p>递归算法是一种直接或者间接调用自身函数或者方法的算法。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> factorialize (num) &#123;</span><br><span class="line">  // 函数内部继续调用，如果不做条件判断会无限递归下去</span><br><span class="line">  <span class="keyword">if</span> (num &gt; 0) &#123;</span><br><span class="line">    <span class="built_in">return</span> num * factorialize (num -1)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123; // 防止factorialize(1)没有值，当num=1时，factorialize(1)=1</span><br><span class="line">    <span class="built_in">return</span> 1</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">factorialize(3)</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/06/JS-随机数-Math-对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nvpKong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="nvpKong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/06/JS-随机数-Math-对象/" itemprop="url">JS-随机数 Math 对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-06T19:22:01+08:00">
+                2019-10-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="JavaScript-Math-对象"><a href="#JavaScript-Math-对象" class="headerlink" title="JavaScript Math 对象"></a>JavaScript Math 对象</h3><p>Math 对象用于执行数学任务。<br>注释：Math 对象并不像 Date 和 String 那样是对象的类，因此没有构造函数 Math()，像 Math.sin() 这样的函数只是函数，不是某个对象的方法。您无需创建它，通过把 Math 作为对象使用就可以调用其所有属性和方法。</p>
+<p><code>ceil()</code> 方法可对一个数进行上舍入。返回值大于等于 x，并且与它最接近的整数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.ceil(x)</span><br></pre></td></tr></table></figure>
+
+<p><code>floor()</code> 方法可对一个数进行下舍入。返回值小于等于 x，且与 x 最接近的整数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(x)</span><br></pre></td></tr></table></figure>
+
+<p><code>round()</code> 方法可把一个数字舍入为最接近的整数。返回值与 x 最接近的整数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.round(x)</span><br></pre></td></tr></table></figure>
+
+<p><code>random()</code> 方法可返回介于 0 ~ 1 之间的一个随机数。返回值0.0 ~ 1.0 之间的一个伪随机数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.random()</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取随机数，要求是长度一致的字符串格式"><a href="#获取随机数，要求是长度一致的字符串格式" class="headerlink" title="获取随机数，要求是长度一致的字符串格式"></a>获取随机数，要求是长度一致的字符串格式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var random = Math.random()</span><br><span class="line">// 后面加上 10 个零，防止 random 是空字符串导致 slice() 方法报错</span><br><span class="line">random = random + <span class="string">'0000000000'</span> </span><br><span class="line">// random 的长度必须能被 slice() 方法截取的，否则会报错</span><br><span class="line">random = random.slice(0, 10) </span><br><span class="line">console.log(random)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.w3school.com.cn/jsref/jsref_obj_date.asp" title="w3school Math" target="_blank" rel="noopener">参考文献</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/06/JS-数组API/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nvpKong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="nvpKong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/06/JS-数组API/" itemprop="url">JS-数组API</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-06T18:16:35+08:00">
+                2019-10-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="forEach-遍历所有元素"><a href="#forEach-遍历所有元素" class="headerlink" title="forEach 遍历所有元素"></a><code>forEach</code> 遍历所有元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3]</span><br><span class="line">arr.forEach(<span class="keyword">function</span> (item, index) &#123;</span><br><span class="line">  // 遍历数组的所有元素</span><br><span class="line">  console.log(index, item)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="every-判断所有元素是否都符合条件"><a href="#every-判断所有元素是否都符合条件" class="headerlink" title="every 判断所有元素是否都符合条件"></a><code>every</code> 判断所有元素是否都符合条件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3]</span><br><span class="line">var resulet = arr.every(<span class="keyword">function</span> (item, index) &#123;</span><br><span class="line">  // 用来判断所有的数组元素，都满足一个条件</span><br><span class="line">  <span class="keyword">if</span> (item &lt; 4) &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">console.log(resulet)</span><br></pre></td></tr></table></figure>
+
+<h3 id="some-判断是否有至少一个元素符合条件"><a href="#some-判断是否有至少一个元素符合条件" class="headerlink" title="some 判断是否有至少一个元素符合条件"></a><code>some</code> 判断是否有至少一个元素符合条件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3]</span><br><span class="line">var resulet = arr.some(<span class="keyword">function</span> (item, index) &#123;</span><br><span class="line">  // 用来判断所有的数组元素，只要有一个满足条件即可</span><br><span class="line">  <span class="keyword">if</span> (item &lt; 2) &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">console.log(resulet)</span><br></pre></td></tr></table></figure>
+
+<h3 id="sort-排序"><a href="#sort-排序" class="headerlink" title="sort 排序"></a><code>sort</code> 排序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 5, 4, 2, 3]</span><br><span class="line">var arr2 = arr.sort(<span class="keyword">function</span> (a, b) &#123;</span><br><span class="line">  // 从小到大排序</span><br><span class="line">  // <span class="built_in">return</span> a - b</span><br><span class="line"></span><br><span class="line">  // 从大到小排序</span><br><span class="line">  <span class="built_in">return</span> b - a</span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr2)</span><br></pre></td></tr></table></figure>
+
+<h3 id="map-对元素重新组装，生成新数组"><a href="#map-对元素重新组装，生成新数组" class="headerlink" title="map 对元素重新组装，生成新数组"></a><code>map</code> 对元素重新组装，生成新数组</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5]</span><br><span class="line">var arr2 = arr.map(<span class="keyword">function</span> (item, index) &#123;</span><br><span class="line">  // 将元素重新组装，并返回</span><br><span class="line">  <span class="built_in">return</span> <span class="string">'&lt;b&gt;'</span> + item + <span class="string">'&lt;/b&gt;'</span></span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr2)</span><br></pre></td></tr></table></figure>
+
+<h3 id="filter-过滤符合条件的元素"><a href="#filter-过滤符合条件的元素" class="headerlink" title="filter 过滤符合条件的元素"></a><code>filter</code> 过滤符合条件的元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5]</span><br><span class="line">var arr2 = arr.filter(<span class="keyword">function</span> (item, index) &#123;</span><br><span class="line">  // 通过某一个条件过滤数组</span><br><span class="line">  <span class="keyword">if</span> (item &gt;= 2) &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr2)</span><br></pre></td></tr></table></figure>
+
+<h3 id="写一个能遍历对象和数组的forEach函数"><a href="#写一个能遍历对象和数组的forEach函数" class="headerlink" title="写一个能遍历对象和数组的forEach函数"></a>写一个能遍历对象和数组的forEach函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> forEach(obj, fn) &#123;</span><br><span class="line">  var key</span><br><span class="line">  // 准确判断是不是数组</span><br><span class="line">  <span class="keyword">if</span> (obj instanceof Array) &#123;</span><br><span class="line">    obj.forEach(<span class="keyword">function</span> (item, index) &#123;</span><br><span class="line">      fn(index, item)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    // 不是数组就是对象</span><br><span class="line">    <span class="keyword">for</span> (key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">      fn(key, obj[key])</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var arr = [1, 2, 3]</span><br><span class="line">// 注意，这里参数的顺序换了，为了和对象的遍历格式一致</span><br><span class="line">forEach(arr, <span class="keyword">function</span> (index, item) &#123;</span><br><span class="line">  console.log(index, item)</span><br><span class="line">&#125;)</span><br><span class="line">  </span><br><span class="line">var obj = &#123;x: 100, y: 200&#125;</span><br><span class="line">forEach(obj, <span class="keyword">function</span> (key, value) &#123;</span><br><span class="line">  console.log(key, value)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/06/JS-日期 Date 对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nvpKong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="nvpKong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/06/JS-日期 Date 对象/" itemprop="url">JS-日期 Date 对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-06T17:24:53+08:00">
+                2019-10-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="JavaScript-Date-对象"><a href="#JavaScript-Date-对象" class="headerlink" title="JavaScript Date 对象"></a>JavaScript Date 对象</h3><p>Date 对象用于处理日期和时间。<br>注释：Date 对象会自动把当前日期和时间保存为其初始值。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Date.now() // 获取当前时间毫秒数</span><br><span class="line"></span><br><span class="line">var dt = new Date()</span><br><span class="line">dt.getTime() // 获取毫秒数</span><br><span class="line">dt.getFullYear() // 年</span><br><span class="line">dt.getMonth() // 月 (0 - 11)</span><br><span class="line">dt.getDate() // 日 (0 - 31)</span><br><span class="line"></span><br><span class="line">dt.getHours() // 小时 (0 - 23)</span><br><span class="line">dt.getMinutes() // 分钟 (0 - 59)</span><br><span class="line">dt.getSeconds() // 秒 (0 - 59)</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取2019-08-10格式的日期"><a href="#获取2019-08-10格式的日期" class="headerlink" title="获取2019-08-10格式的日期"></a>获取2019-08-10格式的日期</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> formatDate (dt) &#123;</span><br><span class="line">  // 如果这个参数没有的话</span><br><span class="line">  <span class="keyword">if</span> (!dt) &#123;</span><br><span class="line">    dt = new Date()</span><br><span class="line">  &#125;</span><br><span class="line">  var year = dt.getFullYear()</span><br><span class="line">  var month = dt.getMonth() + 1</span><br><span class="line">  var date = dt.getDate()</span><br><span class="line">  <span class="keyword">if</span> (month &lt; 10) &#123;</span><br><span class="line">    // 强制类型转换</span><br><span class="line">    month = <span class="string">'0'</span> + month</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (date &lt; 10) &#123;</span><br><span class="line">    // 强制类型转换</span><br><span class="line">    date = <span class="string">'0'</span> + date</span><br><span class="line">  &#125;</span><br><span class="line">  // 强制类型转换</span><br><span class="line">  <span class="built_in">return</span> year + <span class="string">'-'</span> + month + <span class="string">'-'</span> + date</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var dt = new Date()</span><br><span class="line">var formatDate = formatDate(dt)</span><br><span class="line">console.log(formatDate)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.w3school.com.cn/jsref/jsref_obj_date.asp" title="w3school Date" target="_blank" rel="noopener">参考文献</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/26/Windows-中通过命令行新建、删除文件夹和文件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nvpKong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="nvpKong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/26/Windows-中通过命令行新建、删除文件夹和文件/" itemprop="url">Windows 中通过命令行新建、删除文件夹和文件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-26T22:44:40+08:00">
+                2019-09-26
               </time>
             
 
@@ -1467,345 +1757,53 @@
       
         
           
-            <p><code>Hexo</code>是一个快速、简洁且高效的博客框架。<code>Hexo</code>使用<code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<ol>
-<li><p>创建博客目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br><span class="line">注：在命令中指定文章的布局（layout），默认为 post。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地服务访问</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean		//清除缓存文件和已生成的静态文件</span><br><span class="line">$ hexo g		//生成静态文件（生成网站页面）</span><br><span class="line">$ hexo s		//启动本地服务（查看生成的网站）</span><br><span class="line">注：浏览器上输入localhost:4000查看效果</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>远程存储访问</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean		//清除缓存文件和已生成的静态文件</span><br><span class="line">$ hexo g		//部署之前预先生成静态文件</span><br><span class="line">$ hexo d		//文件生成后立即部署网站</span><br><span class="line">注：如果打开本地服务，需停止服务才能继续输入命令（停止服务快捷键Ctrl+c）</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/GitHub命令行之克隆线上仓库和上传本地文件/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nvpKong">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="nvpKong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/22/GitHub命令行之克隆线上仓库和上传本地文件/" itemprop="url">GitHub命令行之克隆线上仓库和上传本地文件</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T16:18:50+08:00">
-                2019-08-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/命令行/" itemprop="url" rel="index">
-                    <span itemprop="name">命令行</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><code>GitHub</code>是用于版本控制和协作的代码托管平台。它可以让您和其他人在任何地方协同工作。</p>
-<h3 id="克隆线上仓库"><a href="#克隆线上仓库" class="headerlink" title="克隆线上仓库"></a>克隆线上仓库</h3><ol>
-<li>在网页版GitHub上创建远程仓库</li>
-<li>在磁盘上创建本地仓库文件夹</li>
-<li>在本地仓库文件夹打开<code>cmd操作界面</code>进行命令行操作，把GitHub的线上仓库克隆到本地<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/ShawLive/vueDemo.git </span><br><span class="line">注：https://github.com/ShawLive/vueDemo.git 表示我GitHub的线上仓库路径</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="上传本地文件"><a href="#上传本地文件" class="headerlink" title="上传本地文件"></a>上传本地文件</h3><ol>
-<li><p>把要上传的文件拖拽到已克隆好的本地仓库中</p>
-</li>
-<li><p>查看准备提交的文件状态</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>探测本地仓库的新增、修改、删除</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git add . </span><br><span class="line">注：add空格后面有一点（ . ）</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>对你提交的内容进行描述</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"readme"</span> </span><br><span class="line">注：双引号里填写的是你对提交的内容进行描述</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>上传文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git push </span><br><span class="line">注：已配置GitHub的用户名和邮箱，可直接上传文件</span><br><span class="line">$ git push -u origin master  </span><br><span class="line">注：未配置GitHub的用户名和邮箱，此处需要你配置一下</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/常用DOS命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nvpKong">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="nvpKong">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/22/常用DOS命令/" itemprop="url">常用DOS命令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T15:39:34+08:00">
-                2019-08-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/命令行/" itemprop="url" rel="index">
-                    <span itemprop="name">命令行</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>DOS命令，是指DOS操作系统的命令，是一种面向磁盘的操作命令，主要包括<code>目录操作类命令</code>、<code>磁盘操作类命令</code>、<code>文件操作类命令</code>和<code>其它命令</code>。（注释：现在大家用的操作系统<code>windows7</code>、<code>windows10</code>和<code>macOS</code>都是图形化操作系统，在这些操作系统之前人们用的是DOS操作系统。）</p>
-<ol>
-<li><p>CD——改变当前目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：CD [子目录名]</span><br><span class="line">$ <span class="built_in">cd</span> 你要进入的文件夹</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>盘符:——直接进入电脑分区盘</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：[盘符：]</span><br><span class="line">$ f: 直接进入电脑F盘</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>CLS——清屏幕命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：CLS</span><br><span class="line">$ cls</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>DIR——显示磁盘目录命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：[盘符][路径][/P][/W] DIR</span><br><span class="line">$ 你已进入的文件夹 dir</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>mkdir——创建文件夹</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式：mkdir [新建文件夹名]</span><br><span class="line">$ mkdir 新建文件夹名</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
+            <h3 id="windows-cmd-新建、删除文件夹和文件"><a href="#windows-cmd-新建、删除文件夹和文件" class="headerlink" title="windows cmd 新建、删除文件夹和文件"></a>windows <code>cmd</code> 新建、删除文件夹和文件</h3><p>一：文件夹命令行<br>1.新建文件夹<br>方式一：md【盘符：\】【路径\】新目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">md c:\<span class="built_in">test</span>\*</span><br><span class="line">例如：md c:\<span class="built_in">test</span>\newtest</span><br></pre></td></tr></table></figure>
+
+<p>方式二：使用 <code>cmd</code> 进入需要新建文件夹的根目录下，使用 <code>md</code> 或者<code>mkdir</code> 直接创建文件夹 newtest</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">md * 或者 mkdir *</span><br><span class="line">例如：md newtest 或者 mkdir newtest</span><br></pre></td></tr></table></figure>
+
+<p>2.删除文件夹<br>使用 <code>cmd</code> 进入需要删除文件夹的根目录下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rd *</span><br><span class="line">例如：rd newtest</span><br></pre></td></tr></table></figure>
+
+<p>二：文件命令行<br>1.新建文件（创建任意后缀的文件）<br>方式一：新建空文件 type nul&gt;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span> nul &gt; *.*  或者 <span class="built_in">type</span> nul&gt;.*</span><br><span class="line">例如：<span class="built_in">type</span> nul&gt; newtest.txt 或者 <span class="built_in">type</span> nul&gt;.txt</span><br></pre></td></tr></table></figure>
+
+<p>方式二：新建非空文件 echo [fileContent]&gt;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> 文件中的内容&gt;*.*</span><br><span class="line">例如：<span class="built_in">echo</span> <span class="string">'Hello World'</span>&gt;newtest.txt</span><br></pre></td></tr></table></figure>
+
+<p>2.删除文件 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">del *.*</span><br><span class="line">例如：del newtest.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="cmd-基本命令和创建文件"><a href="#cmd-基本命令和创建文件" class="headerlink" title="cmd 基本命令和创建文件"></a><code>cmd</code> 基本命令和创建文件</h3><p>(1). 返回上一级目录：cd .. (cd 与 .. 之间有一空格)。</p>
+<p>(2). 进入某一目录：cd cmd (进入 cmd 目录)。</p>
+<p>(3). 清屏：cls。</p>
+<p>(4). 显示当前路径：cd。</p>
+<h3 id="windows-git-bash-新建、删除文件夹和文件"><a href="#windows-git-bash-新建、删除文件夹和文件" class="headerlink" title="windows git bash 新建、删除文件夹和文件"></a>windows <code>git bash</code> 新建、删除文件夹和文件</h3><p>一：文件夹命令行<br>1.新建文件夹 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir *</span><br><span class="line">例如：mkdir 文件夹名</span><br></pre></td></tr></table></figure>
+
+<p>2.删除文件夹 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -r *</span><br><span class="line">例如：rm -r 文件夹名</span><br></pre></td></tr></table></figure>
+
+<p>二：文件命令行<br>1.新建文件<br>方式一：touch .，直接新建一个文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch *.*</span><br><span class="line">例如： touch 文件名.格式</span><br></pre></td></tr></table></figure>
+
+<p>方式二：vi .，新建一个文件并进入编辑状态（如果文件已存在，则直接进入编辑状态）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi *.*</span><br><span class="line">例如：vi 文件名.格式</span><br></pre></td></tr></table></figure>
+
+<p>注释：<code>vi</code> 其实是 linux 的一个文本编辑器。所以 vi+文件名.格式 后，其实是进入 <code>vi</code> 程序了。<code>vi</code> 有两种模式，编辑模式和命令模式。<br>在命令模式下，我们可以直接按 <code>i</code> ,此时就会切换到编辑模式，如下图，下方有个insert，此时可以直接修改文本内容。</p>
+<img src="http://leeyouth.cn/static/images/vi_bianji.jpg">
+<p>在编辑模式下，按 esc 就可以切换到命令模式。</p>
+<img src="http://leeyouth.cn/static/images/vi_mingling.jpg">
+<p>按下 “ESC” 键，退出编辑模式，切换到命令模式。<br>在命令模式下键入”ZZ”或者”:wq”保存修改并且退出 <code>vi</code>。<br>如果只想保存文件，则键入”:w”，回车后底行会提示写入操作结果，并保持停留在命令模式。</p>
+<p>2.删除文件 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm *.*</span><br><span class="line">例如：rm 文件名.格式</span><br></pre></td></tr></table></figure>
+
+<h3 id="git-基本命令和创建文件"><a href="#git-基本命令和创建文件" class="headerlink" title="git 基本命令和创建文件"></a><code>git</code> 基本命令和创建文件</h3><p>(1). 返回上一级目录：cd .. (cd 与 .. 之间有一空格)。</p>
+<p>(2). 进入某一目录：cd git (进入 git 目录)。</p>
+<p>(3). 清屏：reset。</p>
+<p>(4). 显示当前路径：pwd。</p>
+<p><a href="https://blog.csdn.net/m0_37852904/article/details/81187152" target="_blank" rel="noopener">参考文献1</a><br><a href="https://blog.csdn.net/zshlclzsh/article/details/50434404" target="_blank" rel="noopener">参考文献2</a><br><a href="https://blog.csdn.net/weixin_42130892/article/details/81198987" target="_blank" rel="noopener">参考文献3</a></p>
 
           
         
@@ -1845,7 +1843,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1891,7 +1889,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1913,7 +1911,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
